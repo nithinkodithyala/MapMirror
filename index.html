@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Finder</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Column for current location -->
+            <div class="column">
+                <button id="currentLocationBtn" class="btn">Show My Current Location</button>
+                <div id="currentLocation" class="location-info">Current Location</div>
+            </div>
+
+            <!-- Column for antipode location -->
+            <div class="column">
+                <button id="oppositeLocationBtn" class="btn">Show Opposite Location</button>
+                <div id="oppositeLocation" class="location-info">Opposite Location</div>
+            </div>
+
+            <!-- Column for input and display -->
+            <div class="column">
+                <input type="number" id="latInput" placeholder="Latitude" />
+                <input type="number" id="lngInput" placeholder="Longitude" />
+                <button id="showInputLocationBtn" class="btn">Show Location</button>
+                <div id="inputLocation" class="location-info">Input Location</div>
+                <div id="inputAntipode" class="location-info">Opposite Location</div>
+            </div>
+        </div>
+        <div id="map" class="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
